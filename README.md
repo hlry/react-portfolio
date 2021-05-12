@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# HLRY Professional Portfolio
+
+## Purpose
+A sample website that provides a summary of coding projects.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +71,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Built with
+* HTML
+* Javascript
+* JSX
+* React
+
+## Website
+https://hlry.github.io/react-portfolio/
+
+## Contribution
+Made with love by hlry.
+(c) 2021 HLRY
