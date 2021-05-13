@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
+:root {
+  --surfgreen-color: #8dc4cc;
+  --darkblue-color: #0b3259;
+  --lightblue-color: #6c8bab;
+  --textgray-color: #25405c;
+  --headergray-color: #43464a;
+  --background-color: #e4edf7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* GLOBAL DEFINITIONS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--textgray-color);
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-margin-line {
+padding: 10px 20px;
+border-left: 3px solid;
+border-color: var(--textgray-color);
+width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER / NAV BAR STYLES START */
+header {
+  padding: 20px 35 px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  top: 0;
+  background-color: var(--headergray-color);
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 36px;
+  padding: 0 5px 0 35px;
+  background-color: var(--surfgreen-color);
+  color: var(--textgray-color);
+  display: inline;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  background-color: var(--headergray-color);
+}
+
+header nav ul li {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center; */
+  /* justify-content: space-between; */
+  display: inline-block;
+  margin-left: 25px;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  /* font-size: 15px; */
+  font-size: 1.40vw;
+  color: var(--surfgreen-color);
+  background-color: var(--headergray-color);
+}
+/* HEADER / NAVBAR STYLES END */
+
+/* HERO STYLE START */
+.hero {
+  position: relative;
+  background-image: url("./assets/cover/cover-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h3 {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  background-color: var(--surfgreen-color);
+  padding: 5px 5px;
+}
+/* HERO STYLE END */
+
+/* MAIN BODY STYLES START */
+.main-body {
+  background-color: var(--background-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section {
+  padding: 60px;
+}
+
+.flex-row {
+display: flex;
+}
+
+.main-body h2 {
+text-align: left;
+padding: 5px 5px 5px 35px;
+margin-right: 10 px;
+/* border-right: 3px solid;
+border-color: var(--textgray-color); */
+display: inline-block;
+vertical-align: top;
+flex-basis: 15%;
+}
+
+/* ABOUT ME STYLES */
+.main-body p {
+line-height: 1.7;
+width: 80%;
+font-size: 16px;
+display: inline-block;
+padding: 10px 20px;
+border-left: 3px solid;
+border-color: var(--textgray-color);
+}
+/* ABOUT ME STYLES END */
+
+/* SAMPLE PAST PROJECTS STYLES START */
+.projects-grid-container {
+display: grid;
+grid-template-columns: repeat(3, 300px);
+grid-template-rows: repeat(3 150px);
+grid-gap: 10px;
+}
+
+.projects-grid-container div {
+align-items: center;
+pointer-events: auto;
+}
+
+.project-grid-item {
+width: 300px;
+height: 150px;
+border: solid var(--surfgreen-color);
+position: relative;
+opacity: 0.3;
+}
+
+.project-grid-item:hover {
+opacity: 0.9;
+transition-duration: 1s;
+}
+
+#run-buddy {
+background-image: url("./assets/images/Run-Buddy.png");
+width: 600px;
+height: 300px;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+border: solid var(--surfgreen-color);
+background-color: var(--surfgreen-color);
+position: relative;
+opacity: 0.3;
+}
+
+#run-buddy a {
+text-decoration: none;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+width: 600px;
+height: 300px;
+}
+
+#run-buddy:hover {
+opacity: 0.9;
+transition-duration: 1s;
+}
+
+#horiseon {
+background-image: url("./assets/images/horiseon.png");
+}
+
+#horiseon a {
+text-decoration: none;
+/* grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2; */
+}
+
+#robot-gladiator {
+background-image: url("./assets/images/robot-gladiators-2.png");
+}
+
+#taskinator {
+background-image: url("./assets/images/taskinator.jpg");
+}
+
+#pw-generator {
+background-image: url("./assets/images/password-generator.png");
+}
+
+#cal-parks {
+background-image: url("./assets/images/cal-park-planner.png") ;
+}
+
+#pet-adopter {
+background-image: url("./assets/images/pets-r-us.png")
+}
+
+.project-name {
+background-color: var(--surfgreen-color);
+padding: 0;
+margin: 0;
+font-weight: bold;
+position: absolute;
+bottom: 5px;
+left: 0;
+font-size: 20px;
+padding: 5px;
+opacity: 1;
+}
+/* SAMPLE PAST PROJECTS STYLES END */
+
+/* CONTACT ME STYLES START */
+.contact div ul {    
+
+  padding: 10px 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  display: inline;
+}
+
+.contact div ul li {
+  justify-content: space-around;
+  display: inline-block;
+  text-decoration: underline;
+  list-style: none;
+}
+
+.contact div ul li a {
+padding: 10px 15px;
+/* font-size: 15px; */
+font-size: 1.40vw;
+}
+/* CONTACT ME STYLES END */
+/* MAIN BODY STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero h3 {
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+    .contact-box > * {
+      text-align: center;
+      flex: 0 100%;
+    }
+
 }
