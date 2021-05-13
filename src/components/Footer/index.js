@@ -10,7 +10,7 @@ function Footer() {
             <div className="flex-row">
                 <div className="contact-box left-margin-line">
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}>
-                        <a href="https://github.com/hlry" target="_blank">
+                        <a href="https://github.com/hlry" target="_blank" rel="noreferrer">
                             <img
                                 src={github}
                                 className="my-2"
@@ -19,7 +19,7 @@ function Footer() {
                             />
                         </a>
 
-                        <a href="https://www.linkedin.com/in/hilaryrichardson" target="_blank">
+                        <a href="https://www.linkedin.com/in/hilaryrichardson" target="_blank" rel="noreferrer">
                             <img
                                 src={linkedin}
                                 className="my-2"
@@ -28,7 +28,7 @@ function Footer() {
                             />
                         </a>
 
-                        <a href="https://twitter.com/historiaster" target="_blank">
+                        <a href="https://twitter.com/historiaster" target="_blank" rel="noreferrer">
                             <img
                                 src={twitter}
                                 className="my-2"

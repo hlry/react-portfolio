@@ -13,7 +13,7 @@ function Nav(props) {
                     <a href="#port">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me">Contact</a>
                 </li>
                 <li>
                     <a href="./resume.html">Resume</a>
