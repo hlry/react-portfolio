@@ -1,5 +1,4 @@
 import React from 'react';
-import coverImage from "../../assets/cover/cover-image.jpg";
 import Nav from '../Nav';
 
 function Header() {

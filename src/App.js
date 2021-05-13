@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
-// import Project from './components/Project';
+import Project from './components/Project';
 import Footer from './components/Footer';
 import './App.css';
-
-
 
 {/* // <div>
     //   <main>
@@ -51,83 +49,9 @@ function App() {
           </div>
         </section>
 
-        <section>
-          <div class="flex-row">
-            <h2 id="work">Work</h2>
-            <div class="projects-grid-container left-margin-line">
-              {/* <!-- Run Buddy --> */}
-              <div id="run-buddy">
-                <a href="https://hlry.github.io/run-buddy/">
-                  <div class="project-name">Run Buddy</div>
-                </a>
-              </div>
-              {/* <!-- Horiseon --> */}
-              <a href="https://hlry.github.io/horiseon/">
-                <div class="project-grid-item" id="horiseon">
-                  <div class="project-name">Horiseon</div>
-                </div>
-              </a>
-              {/* <!-- Robot Gladiators --> */}
-              <a href="https://hlry.github.io/robot-gladiators/">
-                <div class="project-grid-item" id="robot-gladiator">
-                  <div class="project-name">Robot
-                                    Gladiators</div>
-                </div>
-              </a>
-              {/* <!-- Taskinator --> */}
-              <a href="https://hlry.github.io/taskinator/">
-                <div class="project-grid-item" id="taskinator">
-                  <div class="project-name">Taskinator</div>
-                </div>
-              </a>
-              {/* <!-- Password Generator --> */}
-              <a href="https://hlry.github.io/friendly-parakeet/">
-                <div class="project-grid-item" id="pw-generator">
-                  <div class="project-name">Password
-                                    Generator</div>
-                </div>
-              </a>
-              {/* <!-- California Park Planner --> */}
-              <a href="https://hlry.github.io/california-camping-planner/">
-                <div class="project-grid-item" id="cal-parks">
-                  <div class="project-name">California Parks Planner</div>
-                </div>
-              </a>
-              {/* <!-- Pets R Us --> */}
-              <a href="https://polar-lowlands-05168.herokuapp.com/">
-                <div class="project-grid-item" id="pet-adopter">
-                  <div class="project-name">Pets R Us</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
+        <Project></Project>
 
-        <section class="contact">
-          <div class="flex-row">
-            <h2 id="contact-me">Contact Me</h2>
-            <div class="contact-box  left-margin-line">
-              {/* <ul>
-                <li>
-                  <a>555.555.5555</a>
-                </li>
-                <li>
-                  <a>hlry@website.com</a>
-                </li>
-                <li>
-                  <a href="https://github.com/hlry">GitHub</a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/historiaster">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://spotify.github.io/">Spotify</a>
-                </li>
-              </ul> */}
-              <Footer></Footer>
-            </div>
-          </div>
-        </section>
+        <Footer></Footer>
 
       </div>
 
