@@ -4,7 +4,7 @@ import profilephoto from '../../assets/profilepic/linkedinprof.jpeg';
 function About() {
     return (
         <section>
-            <div class="flex-row">
+            <div className="flex-row">
                 <h2 id="about-me">About Me</h2>
 
 
