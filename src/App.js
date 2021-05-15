@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Hero from './components/Hero';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <ContactForm></ContactForm>
           )
         }
+        <Resume></Resume>
       </main>
       <Footer></Footer>
     </>
