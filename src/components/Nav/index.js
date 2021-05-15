@@ -1,7 +1,8 @@
 import React from 'react';
 // import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav(props) {
+
+function Nav({ contactSelected, setContactSelected }) {
 
     return (
         <nav>
@@ -13,7 +14,10 @@ function Nav(props) {
                     <a href="#port">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact</a>
+                    <span onClick={() => { setContactSelected(true) }}>
+                        <a href="#contact-me" >Contact</a>
+                    </span>
+
                 </li>
                 <li>
                     <a href="./resume.html">Resume</a>
@@ -22,5 +26,7 @@ function Nav(props) {
         </nav>
     );
 }
+
+
 
 export default Nav;

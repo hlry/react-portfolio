@@ -6,7 +6,7 @@ function ContactForm() {
         name: "",
         email: "",
         message: ""
-    })
+    });
 
     const [errorMessage, setErrorMessage] = useState("");
     const { name, email, message } = formState;
@@ -42,8 +42,8 @@ function ContactForm() {
 
     return (
         <section className="my-5">
-            <h1 data-testid="h1tag" style={{ paddingBottom: 10 }}>
-                Contact Me</h1>
+            <h2 data-testid="h1tag" id="contact-me" style={{ paddingBottom: 10 }}>
+                Contact Me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div style={{ paddingBottom: 5 }}>
                     <label htmlFor="name">Name:</label>

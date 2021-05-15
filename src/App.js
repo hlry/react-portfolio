@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
@@ -9,16 +9,24 @@ import './App.css';
 
 function App() {
 
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <>
-      <Header></Header>
+      <Header contactSelected={contactSelected} setContactSelected={setContactSelected}>
+      </Header>
       <Hero></Hero>
-      <div className="main-body">
+      <main className="main-body">
         <About></About>
-        <ContactForm></ContactForm>
-        <Project></Project>
-        <Footer></Footer>
-      </div>
+        {
+          !contactSelected ? (
+            <Project></Project>
+          ) : (
+            <ContactForm></ContactForm>
+          )
+        }
+      </main>
+      <Footer></Footer>
     </>
   );
 }
