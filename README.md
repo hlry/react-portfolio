@@ -33,5 +33,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * JSX
 * React
 
+## Screenshot
+![Screenshot](./public/react-screenshot.png?raw=true)
+
 ## Contribution
 (c) 2021 HLRY
