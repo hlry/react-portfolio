@@ -3,7 +3,7 @@
 ## Description
 A sample website that provides a summary of coding projects using React to showcase my knowledge of web development.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). My portfolio is hosted on [GitHub Pages](https://github.com).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). My portfolio is hosted on [GitHub Pages](https://hlry.github.io/react-portfolio).
 
 ## Available Scripts
 
@@ -19,7 +19,7 @@ You will also see any lint errors in the console.
 
 ## Deployment
 
-Checked out my portfolio on the deployed GitHub Page. 
+Checked out my portfolio on the [deployed GitHub Page](https://hlry.github.io/react-portfolio). 
 
 ## Learn More
 
