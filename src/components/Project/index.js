@@ -21,11 +21,9 @@ function Project() {
                             <div className="project-name">Horiseon</div>
                         </div>
                     </a>
-
-                    <a href="https://hlry.github.io/robot-gladiators/">
-                        <div className="project-grid-item" id="robot-gladiator">
-                            <div className="project-name">Robot
-                            Gladiators</div>
+                    <a href="https://tranquil-falls-18471.herokuapp.com/">
+                        <div className="project-grid-item" id="green-thumbs">
+                            <div className="project-name">Green Thumbs</div>
                         </div>
                     </a>
 
@@ -51,11 +49,6 @@ function Project() {
                     <a href="https://polar-lowlands-05168.herokuapp.com/">
                         <div className="project-grid-item" id="pet-adopter">
                             <div className="project-name">Pets R Us</div>
-                        </div>
-                    </a>
-                    <a href="https://tranquil-falls-18471.herokuapp.com/">
-                        <div className="project-grid-item" id="green-thumbs">
-                            <div className="project-name">Green Thumbs</div>
                         </div>
                     </a>
                 </div>
