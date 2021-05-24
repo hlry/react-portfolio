@@ -232,6 +232,10 @@ background-image: url("./assets/images/cal-park-planner.png") ;
 background-image: url("./assets/images/pets-r-us.png")
 }
 
+#green-thumbs {
+  background-image: url("./assets/images/kale.jpeg");
+}
+
 .project-name {
 background-color: var(--surfgreen-color);
 padding: 0;

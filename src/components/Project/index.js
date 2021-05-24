@@ -53,6 +53,11 @@ function Project() {
                             <div className="project-name">Pets R Us</div>
                         </div>
                     </a>
+                    <a href="https://tranquil-falls-18471.herokuapp.com/">
+                        <div className="project-grid-item" id="green-thumbs">
+                            <div className="project-name">Green Thumbs</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
